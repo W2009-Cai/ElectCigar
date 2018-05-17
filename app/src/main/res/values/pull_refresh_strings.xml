@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pull_down_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_down_to_refresh_release_label">松开刷新</string>
+    <string name="pull_down_to_refresh_refreshing_label">正在刷新</string>
+    
+    <string name="pull_up_to_refresh_pull_label">上拉加载</string>
+    <string name="pull_up_to_refresh_release_label">松开加载</string>
+    <string name="pull_up_to_refresh_refreshing_label">正在加载</string>
+    
+    <string name="pull_down_time_format">上次更新时间 : %s</string>
+    <string name="pull_no_more">没有更多了</string>
+
+</resources>

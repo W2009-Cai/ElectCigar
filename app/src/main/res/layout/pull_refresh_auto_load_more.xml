@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/auto_load_more_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/pull_refresh_progress_loading" />
+
+        <TextView
+            android:id="@+id/pull_to_refresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="加载中..."
+            android:textColor="@color/black_60"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reload_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/reload_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:text="加载失败，点击重新加载"
+            android:textColor="@color/black_60"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_more_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/no_more_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="无更多数据"
+            android:textColor="@color/black_60"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

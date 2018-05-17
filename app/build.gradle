@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.xlb.elect.cigar"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters  "armeabi", "armeabi-v7a"
+        }
+        flavorDimensions "xiaolanba"
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('xlb_release.jks')
+            storePassword "xlb@2018"
+            keyAlias "xiaolanba"
+            keyPassword "xlb@2018"
+            v2SigningEnabled false
+        }
+        debug {
+//            storeFile file('xlb_debug.jks')
+//            storePassword "123456"
+//            keyAlias "xiaolanba"
+//            keyPassword "123456"
+//            v2SigningEnabled false
+            storeFile file('xlb_release.jks')
+            storePassword "xlb@2018"
+            keyAlias "xiaolanba"
+            keyPassword "xlb@2018"
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    productFlavors {
+        J66666666 {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    // 统一打包名称
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (oldFile != null && oldFile.name.endsWith('.apk') && variant.buildType.name.equals('release')) {
+                def releaseApkName = 'passenger_' + variant.productFlavors[0].name + '_' + defaultConfig.versionName + '_release.apk'
+                output.outputFileName = new File(releaseApkName)
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    sourceSets { main { jniLibs.srcDirs = ['libs'] } }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+    //    compile 'com.android.support:recyclerview-v7:25.3.1'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-annotations:25.3.1'
+    //用于annotation注解的
+    //rxAndroid/rxjava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    // retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //progressView
+    compile 'com.wang.avi:library:1.0.1'
+    compile project(':commonlib')
+    compile project(':expandableadapter')
+    compile project(':zxinglite')
+    compile(name: 'openDefault-1.0.0', ext: 'aar')
+    implementation files('libs/open_sdk_r5990_lite.jar')
+    implementation files('libs/wechat-sdk-android-without-mta-5.1.4.jar')
+    //新版本的微信分享
+    implementation files('libs/AndroidBleApi_V1.1.3.jar')
+}

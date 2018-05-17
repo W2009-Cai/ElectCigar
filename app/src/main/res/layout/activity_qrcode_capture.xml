@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wechat_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.google.zxing.client.android.AutoScannerView
+        android:id="@+id/autoscanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/left_img_btn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/return_back_white"
+        android:background="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        >
+        <TextView
+            android:id="@+id/light_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#d0d0d0"
+            android:drawableTop="@drawable/but_light_nor"
+            android:drawablePadding="8dp"
+            android:text="打开手电筒"
+            />
+        <TextView
+            android:id="@+id/input_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#d0d0d0"
+            android:drawableTop="@drawable/but_input_nor"
+            android:drawablePadding="8dp"
+            android:text="手动输入"
+            />
+    </LinearLayout>
+</RelativeLayout>

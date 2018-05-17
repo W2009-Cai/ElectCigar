@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="tag_image_url" />
+    <item type="id" name="tag_gif_url" />
+    <item type="id" name="tag_image_position" />
+    <item type="id" name="tag_audio" />
+
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+
+    <item name="slide_frame" type="id" />
+    <item name="slide_content" type="id" />
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <com.xiaolanba.passenger.common.view.ProgressLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/progress_layout"
+        android:visibility="visible"
+        tools:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/no_data_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/search_none_icon"
+        />
+
+    <TextView
+        android:id="@+id/no_data_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/no_content_tip"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/sp_15"
+        android:visibility="visible"
+        />
+</LinearLayout>

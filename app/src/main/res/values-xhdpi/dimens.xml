@@ -1,0 +1,37 @@
+<resources>
+    <dimen name="title_height">46dp</dimen>
+    <dimen name="divider_height">8dp</dimen>
+
+
+
+    <!--字体大小sp-->
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_9">9sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_21">21sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_23">23sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+
+    <!--个人模块-->
+    <dimen name="input_tip_mar_top">26dp</dimen>
+    <dimen name="count_txt_mar_top">13dp</dimen>
+    <dimen name="identify_codetxt_mar_top">50dp</dimen>
+    <dimen name="big_tiptxt_mar_top">48dp</dimen>
+    <dimen name="input_edit_mar_edge">40dp</dimen>
+    <dimen name="phone_edit_mar_top">45dp</dimen>
+    <dimen name="line_mar_input_edit">14dp</dimen>
+    <dimen name="address_name_mar_bottom">6.5dp</dimen>
+
+    <dimen name="comfirm_dialog_mar_left">36dp</dimen>
+</resources>

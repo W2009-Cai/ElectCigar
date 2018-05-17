@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <!--<include-->
+            <!--layout="@layout/common_title"-->
+            <!--/>-->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f3f3f3" />
+
+
+        <RadioGroup
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/home_tab"
+                style="@style/tab_btn"
+                android:drawableTop="@drawable/tab_home_selector"
+                android:text="设备" />
+
+
+            <RadioButton
+                android:id="@+id/market_tab"
+                style="@style/tab_btn"
+                android:drawableTop="@drawable/tab_community_selector"
+                android:text="商城" />
+
+            <RadioButton
+                android:id="@+id/community_tab"
+                style="@style/tab_btn"
+
+                android:drawableTop="@drawable/tab_star_selector"
+                android:text="社区" />
+
+            <RadioButton
+                android:id="@+id/my_tab"
+                style="@style/tab_btn"
+                android:drawableTop="@drawable/tab_my_selector"
+                android:text="我的" />
+        </RadioGroup>
+
+    </LinearLayout>
+</FrameLayout>

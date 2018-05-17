@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StickHeaderLayout">
+        <attr name="scrollViewId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="color" />
+        <attr name="pstsSelectedTabTextSize" format="dimension" />
+        <attr name="pstsSelectedTabTextColor" format="color" />
+        <attr name="pstsIndicatorMode">
+            <flag name="line" value="0x0" />
+            <flag name="roundRect" value="0x1" />
+        </attr>
+        <attr name="pstsIndicatorRoundRectRadius" format="dimension" />
+        <attr name="pstsTabBackgroundState">
+            <flag name="none" value="0x0" />
+            <flag name="resId" value="0x1" />
+        </attr>
+</declare-styleable>
+    <!--圆环进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textBarColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StarHomeSendNoteAnimView">
+        <attr name="center_img_src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RichContentView">
+        <attr name="rc_textColor" format="color" />
+        <attr name="rc_textSize" format="dimension" />
+        <attr name="rc_emojiconSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+    <!--跑马灯效果-->
+    <declare-styleable name="MarqueeView">
+        <attr name="martextcolor" format="color" />
+        <attr name="martextSize" format="dimension" />
+        <attr name="isRepeat" format="boolean" />
+        <attr name="speed" format="integer"/>
+        <attr name="startPoint" format="integer">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr name="direction" format="integer">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

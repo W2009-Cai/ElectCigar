@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@null"
+        android:src="@drawable/button_lost_off"
+        android:clickable="false"
+        />
+    <TextView
+        android:id="@+id/num_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="aaa"
+        android:textColor="@color/theme_green"
+        android:textSize="@dimen/sp_24"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aaa"
+        android:textColor="@color/color_4a4a4a"
+        android:textSize="@dimen/sp_12"
+        />
+</LinearLayout>
+</FrameLayout>

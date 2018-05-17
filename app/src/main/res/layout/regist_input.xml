@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include
+        layout="@layout/common_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/input_edit_mar_edge"
+        android:layout_marginRight="@dimen/input_edit_mar_edge"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:minWidth="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/color_878787"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_arrow_down" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/phone_edit"
+            style="@style/blueCursorEditText"
+            android:layout_width="0.0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:digits="0123456789"
+            android:gravity="bottom"
+            android:hint="@string/input_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/color_4a4a4a"
+            android:textColorHint="@color/gray_very_dark"
+            android:textSize="@dimen/sp_16"
+            android:focusableInTouchMode="true"
+            tools:text="1234" />
+        <!--扩大点击区域-->
+        <ImageButton
+            android:id="@+id/clear_img"
+            android:layout_width="@dimen/return_back_width"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:paddingTop="3dp"
+            android:src="@drawable/login_icon_delete_nor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/input_edit_mar_edge"
+        android:layout_marginRight="@dimen/input_edit_mar_edge"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray_dark" />
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="@dimen/input_edit_mar_edge"
+        android:layout_marginRight="@dimen/input_edit_mar_edge"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_green_round"
+        android:text="@string/next_state"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/white" />
+</LinearLayout>

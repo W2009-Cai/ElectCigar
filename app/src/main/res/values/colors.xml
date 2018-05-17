@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明 -->
+    <color name="transparent">#00ffffff</color>
+    <drawable name="transparent">@color/transparent</drawable>
+
+    <!-- 白色 start -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_10">#20FFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_30">#4cFFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_70">#b2FFFFFF</color>
+    <color name="white_80">#ccFFFFFF</color>
+    <color name="white_90">#e6FFFFFF</color>
+    <!-- 白色 end -->
+
+
+    <!-- 黑色 start -->
+    <color name="black">#000000</color>
+    <color name="black_5">#10000000</color>
+    <color name="black_10">#20000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#b2000000</color>
+    <color name="black_80">#cc000000</color>
+    <color name="black_90">#e6000000</color>
+    <!-- 黑色 end -->
+
+    <color name="theme_green">#30c477</color>
+    <!-- 主题颜色 -->
+    <color name="main_color">#30c477</color>
+    <color name="red">#ff0000</color>
+    <!-- 内容背景颜色 -->
+    <color name="content_bg">#eff0f3</color>
+    <!-- 标题背景颜色 -->
+    <color name="title_background">#F5F6F8</color>
+    <!-- 字体颜色 -->
+    <color name="text_color">#353535</color>
+    <!-- 字体颜色hint -->
+    <color name="text_hint_color">#9e9e9e</color>
+    <!-- 分割线颜色 -->
+    <color name="divide_color">#d9d9d9</color>
+    <color name="color_eeeeee">#eeeeee</color>
+
+    <!--布局按下时显示的颜色-->
+    <color name="layout_press">#f3f3f3</color>
+
+    <!--半透明颜色-->
+    <color name="translucent_half">#64000000</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_fe592c">#fe592c</color>
+    <color name="color_9fd32a">#9fd32a</color>
+    <color name="color_353535">#353535</color>
+    <color name="color_a0a0a0">#a0a0a0</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_5eae5e">#5eae5e</color>
+    <color name="color_e23a20">#e23a20</color>
+    <color name="color_f7c032">#F7C032</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_FD9316">#FD9316</color>
+    <color name="color_A8A8A8">#A8A8A8</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_F8CA2B">#F8CA2B</color>
+    <color name="color_151515">#151515</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_585858">#585858</color>
+    <color name="color_4a4a4a">#4a4a4a</color>
+    <color name="color_878787">#878787</color>
+    <color name="color_696969">#696969</color>
+    <color name="color_7e8386">#7e8386</color>
+
+    <color name="progress_bg">#64575a</color>
+    <color name="progress_progress_bg">#e73850</color>
+
+    <color name="gray_dark">#787878</color>
+    <color name="dark_8e8e8e">#8e8e8e</color>
+    <color name="gray_b5b5b5">#b5b5b5</color>
+    <color name="gray_very_dark">#e8e8e8</color>
+    <color name="gray_pale">#f3f4f5</color>
+
+    <!--左滑删除效果-->
+    <color name="bg_swipe_item_neutral">@android:color/transparent</color>
+    <color name="bg_swipe_item_pinned">#999999</color>
+    <color name="bg_swipe_item_dismiss">#ff2f8b2a</color>
+    <!--radioBtn-->
+    <color name="radiobg_press">#43859d</color>
+    <color name="radiobg_normal">#555555</color>
+</resources>
